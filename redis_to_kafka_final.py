@@ -2,16 +2,12 @@ import redis
 from kafka import KafkaProducer
 import json
 
-# redis_host = 'redis-10717.c114.us-east-1-4.ec2.cloud.redislabs.com'
-# redis_port = 10717
-# redis_password = 'tlvU0CQO6x4odmDKsdPiEXuvpHDIafyX'
-
-redis_host = 'redis-11340.c325.us-east-1-4.ec2.cloud.redislabs.com'
-redis_port = 11340
-redis_password = 'Prabu123'
+redis_host = ''
+redis_port = 
+redis_password = ''
 
 # Kafka configuration
-kafka_bootstrap_servers = '150.136.139.228:9092'  # Replace with your Kafka broker's address and port
+kafka_bootstrap_servers = ''  # Replace with your Kafka broker's address and port
 
 redis_client = redis.StrictRedis(host=redis_host, port=redis_port, password=redis_password, decode_responses=True)
 # producer = KafkaProducer(bootstrap_servers=kafka_bootstrap_servers)
